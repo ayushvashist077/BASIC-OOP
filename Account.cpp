@@ -101,6 +101,13 @@ class current:public account
     
           } 
      }
+     void display()
+     {   cout<<"ACCOUNT NO: "<<accno<<endl;
+         cout<<"ACCOUNT HOLDER'S NAME: "<<name<<endl;
+         cout<<"AMOUNT WITHDRAWN "<<with<<endl;
+         cout<<"AMOUNT DEPOSITED "<<dep<<endl;
+         cout<<"ACCOUNT BALANCE: "<<balance<<endl;
+     }
      
     };
     
@@ -132,6 +139,7 @@ int main()
         b.withdraw();
         else if(n2==2)
         b.deposite();
+        b.display();
        
   }
   
